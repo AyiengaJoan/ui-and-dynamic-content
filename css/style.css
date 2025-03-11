@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Sigmar&display=swap');
+
+/* Monochromatic Colours- Hex codes:
+#E0DE8A;
+#34342D;
+ #616042;
+ #36361C;
+
+*/
+
+:root {
+    /* Analogous Colours */
+    --lightyellow: #E0DE8A;
+    --grey: #34342D;
+    --darkgreen: #616042;
+    --darkergreen: #36361C;
+
+    /* Fonts */
+    --heading: "Sigmar", sans-serif;
+    --bodyfont: "ABeeZee", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: var(--bodyfont);
+    text-align: center;
+
+}
+
+.wrapper {
+    max-width: 45rem;
+    margin: auto;
+    background-color: var(--lightyellow);
+    padding: 3em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+img {
+    animation: sway 1s infinite ease-in-out;
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+}
+
+h1 {
+    font-family: var(--heading);
+    color: var(--grey);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h2 {
+    color: var(--darkergreen);
+    margin-bottom: 1.5em;
+}
+
+#inpt {
+    width: 100%;
+    height: auto;
+    padding: 1.5em;
+    margin-bottom: 2em;
+}
+
+button {
+    width: 100%;
+    height: auto;
+    padding: 1.5em;
+    color: white;
+    background-color: var(--darkergreen);
+    border: none;
+    margin-bottom: 3em;
+    font-family: var(--bodyfont);
+}
+
+button:hover {
+    background-color: var(--darkgreen);
+    transition: all 0.3s ease;
+}
+
+hr {
+    border-color: var(--grey);
+    margin-bottom: 2em;
+}
+
+ul {
+    list-style: none;
+}
+
+#list {
+    padding-left: 0;
+    margin-bottom: 1.5em;
+    color: var(--darkergreen);
+}
+
+#list li {
+    margin-bottom: 1em;
+}
+
+#list li:hover {
+    background-color: var(--darkgreen);
+    padding: 1em;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+#err {
+    color: red;
+    margin-bottom: 2em;
+}
+
+i {
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+    padding-left: 0;
+}
+
+footer li a {
+    color: var(--grey);
+}
+
+footer li a:hover {
+    color: var(--darkgreen);
+}
